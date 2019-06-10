@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Scheduler</title>
+    <link rel="stylesheet" href="">
+    <script src=""></script>
+</head>
+<body>
+    <br>
+        <div class="container">
+
+                <div class="jumbotron bg-dark text-light">
+                    <h1 class="text-center">Train Schedule</h1>
+                    <h3 class="text-center">Information</h3>
+                </div>
+    
+        <div class="row">
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="card-header">Current Train Schedule</div>
+                    <div class="card-body">
+                        <table class="table" id="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Train</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Frequency</th>
+                                <th scope="col">Next Arrival</th>
+                                <th scope="col">Minutes Away</th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="card-header">Add Train</div>
+                <div class="card-body">
+                    <form>
+                        <div class="group">
+                            <label for="name-input">Train Name</label>
+                            <input class="form-control" id="name-input" placeholder="Train" type="text">
+                        </div>
+                        <div class="group">
+                        <label for="destination-input"> Destination</label>
+                        <input class="form-control" id="destination-input" placeholder="Bound to" type="text">
+                        </div>
+                        <div class="group">
+                            <label for="time-input"> First Train Time (HH:MM - Military Time)</label>
+                            <input class="form-control" id="time-input" placeholder="00:00" type="text">
+                        </div>
+                        <div class="group">
+                            <label for="frequency-input">Frequency</label>
+                            <input class="form-control" id="frequency-input" placeholder="08" type="text">
+                        </div>
+                            <button class="btn-primary float-right" id="button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script></script>
+</body>
+</html>
